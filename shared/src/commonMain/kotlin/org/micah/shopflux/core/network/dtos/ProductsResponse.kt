@@ -12,8 +12,3 @@ data class ProductDto(
    val category: String,
    val image: String
 )
-
-@Serializable
-data class ProductsResponse(
-    val products: List<ProductDto>
-)

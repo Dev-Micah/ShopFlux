@@ -11,7 +11,7 @@ sealed class ApiResponse <out T>{
 }
 
 suspend inline fun <reified T> safeApiCall(
-    apiCall: () -> HttpResponse,
+    crossinline apiCall: suspend () -> HttpResponse,
 ): ApiResponse<T>{
     return try {
         val response = apiCall.invoke()
