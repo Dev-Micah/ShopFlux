@@ -63,7 +63,7 @@ kotlin {
             implementation(libs.koin.compose)
 
             // Navigation
-            implementation(libs.navigation3.core)
+            implementation(libs.navigation3.runtime)
             implementation(libs.navigation3.ui)
         }
         commonTest.dependencies {
